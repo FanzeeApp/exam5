@@ -1,0 +1,787 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-feature-settings: "tnum";
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  height: 56px;
+  background: #da002b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 110;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+header.hidden {
+  transform: translateY(-100%);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn1nav {
+  font-family: Raleway;
+  padding: 4px 10px;
+  background: #fff;
+  color: #da002b;
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  transition: 0.6s;
+}
+.btn1nav:hover {
+  background: #da002b;
+  color: #fff;
+}
+
+.btn2nav {
+  padding: 4px 10px;
+  background: #da002b;
+  color: #fff;
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  transition: 0.6s;
+}
+.btn2nav:hover {
+  background: #fff;
+  color: #da002b;
+}
+
+.btn3nav {
+  padding: 4px 10px;
+  background: #fff;
+  color: #da002b;
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+.btn3nav:hover {
+  background: #da002b;
+  color: #fff;
+}
+
+.a-xarita {
+  margin-left: 13px;
+  font-family: Raleway;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.a-xarita:hover {
+  color: #c9bcbc;
+}
+
+.nav-qism1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.nav-qism2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 36px;
+}
+.nav-qism2 .raqam-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+}
+.nav-qism2 .raqam-btn a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease;
+}
+.nav-qism2 .raqam-btn a:hover {
+  color: #c9bcbc;
+}
+.nav-qism2 .raqam-btn .buy-btn {
+  font-family: Raleway;
+  padding: 10px 10px;
+  background: #da002b;
+  color: #fff;
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 13px;
+  transition: 0.6s;
+}
+.nav-qism2 .raqam-btn .buy-btn:hover {
+  background: #fff;
+  color: #da002b;
+}
+.nav-qism2 .til-btn {
+  height: 56px;
+  border-left: 1px solid #b6adad;
+  border-right: 1px solid #b6adad;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+}
+.nav-qism2 .til-btn a {
+  margin-left: 13px;
+  margin-right: 13px;
+  font-family: Raleway;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.nav-qism2 .til-btn a:hover {
+  color: #c9bcbc;
+}
+
+.nav-two {
+  margin-top: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+  padding: 30px 0;
+  transition: top 0.3s ease-in-out;
+}
+.nav-two .cards-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 20px;
+}
+.nav-two .cards-two .logo-olcha {
+  width: 102px;
+  height: 30px;
+}
+.nav-two .cards-two .katalog {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 29px;
+  font-size: 18px;
+  font-family: Raleway;
+  border: 2px solid black;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.nav-two .cards-two .katalog:hover {
+  border: 2px solid #da002b;
+  color: #da002b;
+}
+.nav-two .cards-two .search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 635px;
+  max-height: 48px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 4px;
+}
+.nav-two .cards-two .search-bar .search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: #707070;
+  padding: 8px 12px;
+  outline: none;
+}
+.nav-two .cards-two .search-bar .search-btn {
+  background-color: #da002b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12.5px 29px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.nav-two .cards-two .search-bar .search-btn:hover {
+  border: 0.3px solid #da002b;
+}
+.nav-two .cards-two .search-bar .search-btn svg {
+  fill: #fff;
+}
+.nav-two .cards-two .icon-card {
+  text-decoration: none;
+  width: 65px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.nav-two .cards-two .icon-card img {
+  width: 30px;
+  height: 30px;
+}
+.nav-two .cards-two .icon-card p {
+  font-size: 14px;
+  color: black;
+  font-family: Raleway;
+  transition: 0.4s ease;
+}
+.nav-two .cards-two .icon-card p:hover {
+  color: #da002b;
+}
+
+.swiper-one {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.swiper {
+  width: 941px;
+  height: 384px;
+  border-radius: 10px;
+}
+.swiper .swiper-slide img {
+  width: 991px;
+  height: 384px;
+  background-repeat: no-repeat;
+}
+
+.kun-mahsulot {
+  border-radius: 10px;
+  width: 324px;
+  height: 384px;
+  border: 3px solid #da002b;
+}
+.kun-mahsulot .day-product {
+  padding: 16px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.kun-mahsulot .day-product .headeron {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.kun-mahsulot .day-product .headeron h2 {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.kun-mahsulot .day-product .headeron .countdown {
+  display: flex;
+  gap: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.kun-mahsulot .day-product .headeron .countdown span {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 8px;
+  min-width: 30px;
+  text-align: center;
+}
+
+.cards-3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cards-3 img {
+  width: 410px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 78px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+.products a {
+  text-decoration: none;
+}
+
+.product-royxat {
+  display: flex;
+  flex-direction: column;
+  width: 266px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.product-royxat .imgcard {
+  position: relative;
+  width: 100%;
+  height: 355px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.product-royxat .imgcard .img-photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-royxat .imgcard .club-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-royxat .imgcard .club-img .iconka {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.product-royxat .imgcard .club-img .iconka:hover {
+  background-color: #f0f0f0;
+}
+.product-royxat .texts {
+  padding: 15px;
+}
+.product-royxat .texts .name-product {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Raleway, sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+.product-royxat .texts .price {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 8px;
+}
+.product-royxat .texts .muddatli-tolov {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #dfdf22;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.product-royxat .texts .btnlar-sotuv {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.product-royxat .texts .btnlar-sotuv .korzinka-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.product-royxat .texts .btnlar-sotuv .korzinka-btn:hover {
+  background-color: #e7dfdf;
+}
+.product-royxat .texts .btnlar-sotuv .korzinka-btn img {
+  width: 24px;
+  height: 24px;
+}
+.product-royxat .texts .btnlar-sotuv .muddatli-btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  color: #da002b;
+  border: 1px solid #da002b;
+  border-radius: 7px;
+  background: transparent;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.product-royxat .texts .btnlar-sotuv .muddatli-btn:hover {
+  background-color: #da002b;
+  color: #fff;
+}
+
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.imgcontent {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.imgcontent .text-foot {
+  width: 409px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 28px;
+}
+.imgcontent p {
+  font-size: 20px;
+  color: black;
+  font-family: Raleway, sans-serif;
+}
+.imgcontent .content-play {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.imgcontent .content-play img {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 170px;
+}
+
+.foot-nav {
+  margin-top: 60px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.foot-nav .qism-foot {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  flex-direction: column;
+}
+.foot-nav .qism-foot p {
+  font-size: 16px;
+  font-family: Raleway, sans-serif;
+}
+.foot-nav .qism-foot .spn-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.foot-nav .qism-foot .gmail-icon img {
+  width: 20px;
+  height: 20px;
+}
+.foot-nav .qism-foot .logo-olchauz {
+  width: 102px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.malumot-foot:first-child {
+  font-weight: 600;
+  color: #da002b;
+  font-size: 20px;
+  font-family: Raleway, sans-serif;
+}
+
+.logolar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 356px;
+}
+.logolar img {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex: 0 1 calc(33.333% - 21px);
+  justify-content: center;
+  overflow: hidden;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 80px;
+  height: 29px;
+}
+
+.oxiri-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.oxiri-foot .end-text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 80px;
+}
+.oxiri-foot .end-text p {
+  font-size: 14px;
+  font-family: Raleway;
+  color: #333;
+  transition: 0.3s ease;
+}
+.oxiri-foot .end-text p:hover {
+  color: #da002b;
+}
+.oxiri-foot .end-icons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 7px;
+}
+.oxiri-foot .end-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.detail {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+.detail .mini-detail {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.detail .mini-detail .mahsulot-nomi {
+  font-family: Raleway, sans-serif;
+  font-size: 40px;
+  color: black;
+}
+.detail .mini-detail .tarmoq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail .mini-detail .tarmoq .star {
+  display: flex;
+  align-items: end;
+  flex-direction: row;
+  gap: 2px;
+}
+.detail .mini-detail .tarmoq .star img {
+  width: 24px;
+  height: 24px;
+}
+
+.name-baho {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kattabaza {
+  display: flex;
+  align-items: start;
+  gap: 56px;
+}
+.kattabaza .img-bosh {
+  width: 465px;
+  height: 465px;
+  border-radius: 10px;
+}
+.kattabaza .img-bosh .detail-uchun {
+  width: 465px;
+  height: 465px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+.kattabaza .malumotnoma {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  gap: 20px;
+}
+.kattabaza .malumotnoma .kichik-img {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 6px;
+  width: 84px;
+  height: 88px;
+}
+.kattabaza .malumotnoma .kichik-img img {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 75px;
+  height: 75px;
+  padding: 5px;
+}
+
+.uzunmalumot {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 28px;
+}
+.uzunmalumot .textlink {
+  font-size: 14px;
+  font-family: Raleway, sans-serif;
+  color: #222;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 350px;
+  margin: 20px;
+}
+.product-card .price-info h2 {
+  color: #e60000;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.product-card .price-info .delivery-info {
+  font-size: 14px;
+  color: #666;
+}
+.product-card .price-info .delivery-info i.icon-truck {
+  margin-right: 8px;
+  color: #888;
+}
+.product-card .price-info .delivery-info span {
+  font-size: 12px;
+  display: block;
+  margin-top: 4px;
+}
+.product-card .actions {
+  margin: 20px 0;
+}
+.product-card .actions button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.product-card .actions button.add-to-cart {
+  background-color: #28a745;
+  color: white;
+  margin-bottom: 10px;
+}
+.product-card .actions button.add-to-cart:hover {
+  background-color: #218838;
+}
+.product-card .actions button.buy-now {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+.product-card .actions button.buy-now:hover {
+  background-color: #f8f9fa;
+}
+.product-card .store-info {
+  font-size: 12px;
+  color: #555;
+}
+.product-card .store-info strong {
+  font-weight: bold;
+}
+
+.installment-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 350px;
+  margin: 20px;
+}
+.installment-card .installment-price {
+  color: #e60000;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.installment-card .installment-buy {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #e60000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.installment-card .installment-buy:hover {
+  background-color: #cc0000;
+}
+
+.kattahisob {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */
